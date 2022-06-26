@@ -1,0 +1,199 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+
+  --logo-text-color: #000000;
+  --hero-text-color: #ffffff;
+  --white-text-color: #ffffff;
+  --footer-text-color: #ffffff99;
+
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --accent-background-color: #2f303a;
+}
+
+/* ----------------------------------------------------- */
+/* Body */
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------- */
+/* Logo */
+.logo {
+  color: var(--accent-color);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-header {
+  color: var(--logo-text-color);
+}
+
+.logo-footer {
+  color: var(--white-text-color);
+}
+
+/* Navigation */
+.site-nav,
+.contacts {
+  list-style: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.link-nav {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.link-contacts {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.link-nav:hover,
+.link-nav:focus,
+.link-contacts:hover,
+.link-contacts:focus,
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--accent-color);
+}
+
+/* ----------------------------------------------------- */
+/* Main. Hero */
+.hero {
+  background-color: var(--accent-background-color);
+  color: var(--hero-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-hero {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* ----------------------------------------------------- */
+/* Main. Section 1. Company features */
+.features-list,
+.activity-list,
+.team-list,
+.sorting-list,
+.portfolio-list {
+  list-style: none;
+}
+
+.subtitle-features {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-features {
+  color: var(--secondary-text-color);
+  line-height: 1.71;
+}
+
+/* ----------------------------------------------------- */
+/* Main. Section 2. Company activity */
+.title-activity,
+.title-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* ----------------------------------------------------- */
+/* Main. Section 3. Team */
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.subtitle-team,
+.occupation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.occupation {
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+
+/* ----------------------------------------------------- */
+/* Portfolio. Section 1. Sorting */
+.sorting-button {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+/* ----------------------------------------------------- */
+/* Portfolio. Section 2. Work examples */
+.title-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-type {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* ----------------------------------------------------- */
+/* Footer */
+.footer {
+  background-color: var(--accent-background-color);
+}
+
+.footer-address {
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.link-footer {
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+
+.text-footer {
+  color: var(--white-text-color);
+}
