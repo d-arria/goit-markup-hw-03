@@ -3,51 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <header>
-      <!-- Navigation -->
-      <nav>
-        <a href="./index.html" lang="en" class="logo">
-          Web<span class="logo-header">Studio</span>
-        </a>
+    <div class="container">
+      <header class="header">
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <a href="./index.html" lang="en" class="logo">
+            Web<span class="logo-header">Studio</span>
+          </a>
 
-        <ul class="site-nav">
-          <li><a href="./index.html" class="link-nav">Студия</a></li>
-          <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
-          <li><a href="" class="link-nav">Контакты</a></li>
+          <ul class="site-nav">
+            <li class="item-nav">
+              <a href="./index.html" class="link-nav">Студия</a>
+            </li>
+            <li class="item-nav">
+              <a href="./portfolio.html" class="link-nav">Портфолио</a>
+            </li>
+            <li class="item-nav"><a href="" class="link-nav">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contacts -->
+        <ul class="contacts">
+          <li class="item-contacts">
+            <a href="mailto:info@devstudio.com" class="link-contacts">
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item-contacts">
+            <a href="tel:+380961111111" class="link-contacts">
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-
-      <!-- Contacts -->
-      <ul class="contacts">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link-contacts">
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link-contacts">
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-    </header>
+      </header>
 
     <main>
       <!-- Sorting -->
       <section>
-        <h2>Кнопки для сортировки работ</h2>
+        <h2 class="visually-hidden">Кнопки для сортировки работ</h2>
         <ul class="sorting-list">
           <li><button type="button" class="sorting-button">Все</button></li>
           <li>
@@ -65,90 +77,117 @@
 
       <!-- Work examples -->
       <section>
-        <h1>Примеры работ</h1>
+        <h2 class="visually-hidden">Примеры работ</h2>
         <ul class="portfolio-list">
           <li>
-            <img
-              src="./images/portfolio/technocrack.jpg"
-              alt="Веб-сайт на ноутбуке"
-              width="370"
-            />
-            <h2 class="title-portfolio">Технокряк</h2>
-            <p class="work-type">Веб-сайт</p>
+            <a href="" class="link-portfolio">
+              <img
+                src="./images/portfolio/technocrack.jpg"
+                alt="Веб-сайт на ноутбуке"
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Технокряк</h2>
+              <p class="work-type">Веб-сайт</p>
+            </a>
           </li>
           <li>
-            <img
-              src="./images/portfolio/neworlean-vs-goldenstar.jpg"
-              alt='Два баскетболиста в форме "New Orlean" и "Golden Star"'
-              width="370"
-            />
-            <h2 class="title-portfolio">Постер New Orlean vs Golden Star</h2>
-            <p class="work-type">Дизайн</p>
+            <a href="" class="link-portfolio">
+              <img
+                src="./images/portfolio/neworlean-vs-goldenstar.jpg"
+                alt='Два баскетболиста в форме "New Orlean" и "Golden Star"'
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Постер New Orlean vs Golden Star</h2>
+              <p class="work-type">Дизайн</p>
+            </a>
           </li>
           <li>
-            <img
-              src="./images/portfolio/seafood.jpg"
-              alt="Название ресторана на фоне рыбы"
-              width="370"
-            />
-            <h2 class="title-portfolio">Ресторан Seafood</h2>
-            <p class="work-type">Приложение</p>
-          </li>
-
-          <li>
-            <img
-              src="./images/portfolio/headphones.jpg"
-              alt="Наушники накладные"
-              width="370"
-            />
-            <h2 class="title-portfolio">Проект Prime</h2>
-            <p class="work-type">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/boxes.jpg"
-              alt="Белая и коричневая коробки"
-              width="370"
-            />
-            <h2 class="title-portfolio">Проект Boxes</h2>
-            <p class="work-type">Приложение</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio/mac-desktop.jpg"
-              alt="Монитор Apple"
-              width="370"
-            />
-            <h2 class="title-portfolio">Inspiration has no Borders</h2>
-            <p class="work-type">Веб-сайт</p>
+            <a href="" class="link-portfolio"
+              ><img
+                src="./images/portfolio/seafood.jpg"
+                alt="Название ресторана на фоне рыбы"
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Ресторан Seafood</h2>
+              <p class="work-type">Приложение</p>
+            </a>
           </li>
 
           <li>
-            <img
-              src="./images/portfolio/limited-edition.jpg"
-              alt="Раскрытый журнал"
-              width="370"
-            />
-            <h2 class="title-portfolio">Издание Limited Edition</h2>
-            <p class="work-type">Дизайн</p>
+            <a href="" class="link-portfolio"
+              ><img
+                src="./images/portfolio/headphones.jpg"
+                alt="Наушники накладные"
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Проект Prime</h2>
+              <p class="work-type">Маркетинг</p>
+            </a>
           </li>
           <li>
-            <img
-              src="./images/portfolio/label.jpg"
-              alt="Белая бирка"
-              width="370"
-            />
-            <h2 class="title-portfolio">Проект LAB</h2>
-            <p class="work-type">Маркетинг</p>
+            <a href="" class="link-portfolio">
+              <img
+                src="./images/portfolio/boxes.jpg"
+                alt="Белая и коричневая коробки"
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Проект Boxes</h2>
+              <p class="work-type">Приложение</p>
+            </a>
           </li>
           <li>
-            <img
-              src="./images/portfolio/business.jpg"
-              alt="Человек работает на ноутбуке"
-              width="370"
-            />
-            <h2 class="title-portfolio">Growing Business</h2>
-            <p class="work-type">Приложение</p>
+            <a href="" class="link-portfolio">
+              <img
+                src="./images/portfolio/mac-desktop.jpg"
+                alt="Монитор Apple"
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Inspiration has no Borders</h2>
+              <p class="work-type">Веб-сайт</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="link-portfolio">
+              <img
+                src="./images/portfolio/limited-edition.jpg"
+                alt="Раскрытый журнал"
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Издание Limited Edition</h2>
+              <p class="work-type">Дизайн</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="link-portfolio">
+              <img
+                src="./images/portfolio/label.jpg"
+                alt="Белая бирка"
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Проект LAB</h2>
+              <p class="work-type">Маркетинг</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="link-portfolio">
+              <img
+                src="./images/portfolio/business.jpg"
+                alt="Человек работает на ноутбуке"
+                width="370"
+                class="img"
+              />
+              <h2 class="title-portfolio">Growing Business</h2>
+              <p class="work-type">Приложение</p>
+            </a>
           </li>
         </ul>
       </section>
