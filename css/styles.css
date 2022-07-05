@@ -88,7 +88,7 @@ button {
 /* ----------------------------------------------------- */
 /* Logo */
 .logo {
-  margin: 25px 0;
+  padding: 25px 0;
 
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -124,7 +124,9 @@ button {
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  padding-left: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-nav,
@@ -132,11 +134,11 @@ button {
   list-style: none;
   font-weight: 500;
   letter-spacing: 0.02em;
-  padding-left: 0;
 }
 
 .contacts {
   display: flex;
+  margin: 0;
   margin-left: auto;
 }
 
@@ -161,6 +163,8 @@ button {
 }
 
 .link-contacts {
+  display: block;
+
   color: var(--secondary-text-color);
   text-decoration: none;
 }
@@ -247,6 +251,7 @@ button {
 
 .subtitle-features {
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -266,8 +271,8 @@ button {
   text-align: center;
 }
 
-.activity-container {
-  padding-bottom: 94px;
+.title-activity {
+  margin-bottom: 50px;
 }
 
 .activity-list {
@@ -314,8 +319,12 @@ button {
 }
 
 .subtitle-team {
-  margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.desc-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .subtitle-team,
@@ -327,22 +336,20 @@ button {
 }
 
 .occupation {
-  margin-bottom: 30px;
   font-weight: 400;
   color: var(--secondary-text-color);
+  margin-bottom: 0;
 }
 
 /* ----------------------------------------------------- */
 /* Portfolio. Section 1. Sorting */
-.sorting-section {
-  padding-bottom: 50px;
-}
 
 .sorting-list {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin: 0;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -375,8 +382,7 @@ button {
 
 /* ----------------------------------------------------- */
 /* Portfolio. Section 2. Work examples */
-.portfolio-container {
-}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -422,9 +428,6 @@ button {
 /* Footer */
 .footer {
   background-color: var(--accent-background-color);
-}
-
-.footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
