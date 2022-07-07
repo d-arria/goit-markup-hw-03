@@ -109,7 +109,7 @@ button {
 /* Navigation */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -228,9 +228,8 @@ button {
   list-style: none;
 }
 
-.feature-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.feature-section {
+  padding-bottom: 0;
 }
 
 .feature-list {
